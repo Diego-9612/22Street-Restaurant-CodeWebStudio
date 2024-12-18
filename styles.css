@@ -98,7 +98,7 @@ body{
 
 /* --------------- HEADER QUERIES-------------------------*/
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 650px) {
 
     .header{
         position: sticky;
@@ -106,8 +106,7 @@ body{
         border-bottom: 1px solid #fff ;
     }
 
-    .header__logo{
-        border: 1px solid #fff ;
+    .header__logo-container{
         display: none;
     }
 
@@ -115,28 +114,69 @@ body{
         display: block;
         position: static;
         height: auto;
-        width: auto;
+        width: 100%;
         justify-content: space-between;
+        align-items: center;
         background-color: initial;
+        margin: 10px;
         z-index: auto;
-        border: 1px solid yellow ;
-        margin: 10px 20px;
     }
 
-    .facebook-item{
-        display: none;
+    .header__nav-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 20px;
+        margin-left: 50px;
+    }
+
+    .header__nav-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__nav-right {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
     }
 
     .header__nav-list{
         flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
         height: auto;
-        width: auto;
-        gap: 20px;
-        margin-right: 40px;
+        width: 100%;
         z-index: 1;
+    }
+
+    .header__nav-link {
+        color: inherit;
+        font-weight: 600;
+        padding: 0px;
+        margin: 0px;
+        font-size: 0.9rem;
+    }
+
+    .header__nav-item{
+        padding: 0px;
+        margin: 0px
+    }
+
+    .item-social{
+        margin: 50px;
     }
 
     .header__open-menu-button{
         display: none;
+    }
+
+    .header__nav-logo{
+        max-width: 100%;
+        width: 130px;
     }
 }
