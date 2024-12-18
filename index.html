@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,45 @@
     <script src="/script.js"></script>
 </head>
 <body>
-    
+    <header class="header">
+        <!-- Boton para mostrar el menu de navegacion -->
+        <input class="header__menu-checkbox" type="checkbox" id="header__menu-checkbox" aria-expanded="false" name="header__menu">
+        <label class="header__open-menu-button" for="header__menu-checkbox">
+            <img class="header__icon" src="/Imagenes/menu.png" alt="menu" title="menu">
+        </label>
+        <!-- Logo principal -->
+        <div class="header__logo-container">
+            <img class="header__logo" src="/Imagenes/logo.svg" alt="logo22Street" title="logo22Street">
+        </div>
+
+        <!-- Menú desplegable (checkbox y botón) -->
+        <nav class="header__nav" aria-label="Main Navigation">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#" title="Start">START</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#" title="Explore our services">SERVICES</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#" title="Explore our products">PRODUCTS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#" title="Explore our opening hours">OPENING HOURS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link facebook-item" href="#" title="Explore our facebook">
+                        <img src="/Imagenes/s1.svg" alt="Facebook">
+                    </a>
+                    <a class="header__nav-link" href="#" title="Explore our X">
+                        <img src="/Imagenes/s2.svg" alt="X">
+                    </a>
+                    <a href="#" class="header__nav-link" title="Explore our Instagram">
+                        <img src="/Imagenes/s3.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </nav>               
+    </header>
 </body>
 </html>
