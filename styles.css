@@ -13,6 +13,7 @@ body{
     background-color: #080202;
     font-family: 'Poppins', sans-serif;
     color: #fff
+    
 }
 
 
@@ -101,9 +102,13 @@ body{
 @media screen and (min-width: 650px) {
 
     .header{
+        display: flex;
+        justify-content: center;
         position: sticky;
         top: 0;
         border-bottom: 1px solid #fff ;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .header__logo-container{
@@ -128,7 +133,7 @@ body{
         justify-content: start;
         align-items: center;
         gap: 20px;
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
     .header__nav-center {
@@ -168,7 +173,8 @@ body{
     }
 
     .item-social{
-        margin: 50px;
+        margin: 40px;
+        margin-right: 10px;
     }
 
     .header__open-menu-button{
